@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       MY_ENV: "John Doe"
+      SUPER_SECRET: ${{ secrets.SUPER_SECRET }}
     steps:
       - name: Greet the User
         run: |
